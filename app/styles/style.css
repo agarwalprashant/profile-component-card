@@ -168,8 +168,8 @@ body {
 }
 
 @media (max-width: 375px) {
-  .background .card {
-    width: 90%;
+  .background .background {
+    background-color: #2d3248;
   }
   .background .top {
     -webkit-transform: translate(-75%, -60%);
@@ -178,6 +178,9 @@ body {
   .background .bottom {
     -webkit-transform: translate(75%, 60%);
             transform: translate(75%, 60%);
+  }
+  .background .card {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
