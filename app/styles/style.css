@@ -1,0 +1,183 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #19a2ae;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .top, .background .bottom {
+  position: absolute;
+  z-index: 0;
+}
+
+.background .top {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-20%, -45%);
+          transform: translate(-20%, -45%);
+}
+
+.background .bottom {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(20%, 60%);
+          transform: translate(20%, 60%);
+}
+
+.background .card {
+  position: relative;
+  z-index: 1;
+  height: 25rem;
+  width: 22.5rem;
+  border: none;
+  border-radius: 0.9375rem;
+  background: white;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 10px 5px rgba(89, 89, 89, 0.2);
+          box-shadow: 5px 10px 5px rgba(89, 89, 89, 0.2);
+}
+
+.background .card .bold {
+  font-weight: 700;
+}
+
+.background .card .basic {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .card .basic img {
+  border: 0.3125rem solid white;
+  border-radius: 50%;
+  height: 7.225rem;
+  width: 7.225rem;
+}
+
+.background .card .basic div {
+  margin: 0.3125rem 0;
+}
+
+.background .card .basic .location {
+  margin: auto;
+  font-size: 0.875rem;
+  color: #969696;
+}
+
+.background .card .basic .info {
+  margin-top: 10px;
+}
+
+.background .card .basic .info .main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .card .basic .info .main span {
+  margin: 0.4375rem 0.3125rem;
+}
+
+.background .card .basic .info .main span.age {
+  color: #6a6f81;
+}
+
+.background .card .specific {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.875rem 0;
+  border-top: 1px solid #6a6f81;
+}
+
+.background .card .specific .stats {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .card .specific .stats span:nth-child(2) {
+  font-size: 0.16rem;
+  color: #969696;
+}
+
+.background .card .specific div {
+  margin: 0 0.625rem;
+}
+
+@media (max-width: 375px) {
+  .background .card {
+    width: 90%;
+  }
+  .background .top {
+    -webkit-transform: translate(-75%, -60%);
+            transform: translate(-75%, -60%);
+  }
+  .background .bottom {
+    -webkit-transform: translate(75%, 60%);
+            transform: translate(75%, 60%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

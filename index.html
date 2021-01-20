@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app/styles/style.css">
+</head>
+
+<body>
+  <div class="background flex">
+    <img src="./app/images/bg-pattern-top.svg" alt="top background circle" class="top">
+    <img src="./app/images/bg-pattern-bottom.svg" alt="bottom background cirlce" class="bottom">
+    <div class="card flex column">
+      <div class="basic flex column">
+        <img src="./app/images/image-victor.jpg" alt="profile picture">
+        <div class="info flex column">
+          <div class="main flex">
+            <span class="name bold">Victor Crest</span>
+            <span class="age">26</span>
+          </div>
+          <div class="location">London</div>
+        </div>
+      </div>
+      <div class="specific flex">
+        <div class="followers stats flex column">
+          <span class="bold" id="followers">80K</span>
+          <span>Followers</span>
+        </div>
+        <div class="likes stats flex column">
+          <span class="bold" id="likes">803K</span>
+          <span>Likes</span>
+        </div>
+        <div class="photos stats flex column">
+          <span class="bold" id="photos">1.4K</span>
+          <span>Photos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
